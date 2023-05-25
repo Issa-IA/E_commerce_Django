@@ -25,8 +25,9 @@
                 <div class="card-body">
                     <div id="aa{{ product.id }}" class="card-title">{{ product.title }}</div>
                     <div id="price{{ product.id }}" style="color:orange" class="card-text"> {{ product.price }}</div>
-                    <a href="{{ product.id }}" class="btn btn-warning">Voire</a>
+                    <a href="{% url 'detail' product.id %}" class="btn btn-warning">Voire</a>
                     <button id="{{ product.id }}" class="btn ted btn-success">Ajouter</button>
+
                 </div>
             </div>
         </div>
